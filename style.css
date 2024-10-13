@@ -1,0 +1,188 @@
+/* Resetare margin/padding pentru toate elementele */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Styling pentru navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Container principal */
+.container, body {
+    /*margin: 20px;*/
+  /*  background-color: #ebebeb;*/
+    background-color: rgb(221, 196, 250);
+}
+
+/* Styling secțiuni de conținut */
+.content-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    gap: 10px; /* Reduce distanța între imagine și text */
+   /* border: 1px;
+    border-radius: 12px;
+    border-color: red;*/
+    border: 8px solid #4c00ff; /* Adaugă bordura colorată */
+    padding: 20px; /* Adaugă spațiu interior pentru un aspect aerisit */
+    border-radius: 10px; /* Colțuri rotunjite pentru un efect mai modern */
+    background-color: #c2a7ff;
+}
+
+.content-section.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Imagini și text */
+.content-section .image {
+    flex-basis: 35%; /* Imaginea ocupă maxim 35% din spațiu */
+    flex-shrink: 0; /* Imaginea nu se micșorează mai mult */
+}
+
+.content-section .image img {
+    width: 100%; /* Imaginea ocupă 100% din spațiul alocat de .image */
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: all .4s ease-in-out;
+    /*aspect-ratio: 16/9;*/
+}
+.content-section .image img:hover {
+    /*width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;*/
+    scale: 1.05;
+}
+
+.content-section .text {
+    flex-basis: 60%; /* Textul ocupă restul spațiului */
+}
+
+.content-section .text h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.content-section .text p {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.h2-title, .h1-title{
+    text-decoration: 6px underline;
+  /*  text-align: center;*/
+}
+.h1-title{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: #4c00ff;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.despre-h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #240077;
+   /* padding-top: 20px;*/
+    padding-bottom: 10px;
+}
+footer {
+    position: sticky; /* sticky*/
+    bottom: 0;
+    background-color: #333;
+    padding: 25px;
+    text-align: center;
+    z-index: 1000;
+}
+.f-text{
+    color: white;
+    font-size: 20px;
+}
+.nume{
+    padding: 30px;
+    margin-left: 70vh;
+    margin-right: 70vh;
+    border: 5px solid;
+    border-radius: 5px;
+    border-color: #240077;
+}
+.link-btn{
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid;
+    border-color: aliceblue;
+    background-color: rgb(57, 57, 255);
+    border-radius: 10vh;
+    color: #ffffff;
+    transition: background-color 0.5s ease, color 0.5s ease, padding 0.5s ease;
+}
+.link-btn:hover{
+    background-color: #4c00ff;
+    padding: 30px;
+}
+
+/* Responsivitate pentru dispozitive mobile */
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+    }
+
+    .content-section.reverse {
+        flex-direction: column;
+    }
+
+    .content-section .image {
+        margin-bottom: 15px;
+        flex-basis: 100%; /* Pe mobil, imaginea ocupă toată lățimea */
+    }
+
+    .content-section .image img {
+        width: 100%;
+    }
+
+    .content-section .text {
+        flex-basis: 100%; /* Textul ocupă toată lățimea pe mobil */
+    }
+    .nume{
+        padding: 30px;
+        margin: 50px;
+        border: 5px solid;
+        border-radius: 5px;
+        border-color: #240077;
+    }
+}
