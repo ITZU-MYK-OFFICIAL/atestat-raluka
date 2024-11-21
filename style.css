@@ -5,6 +5,10 @@
     box-sizing: border-box;
     
 }
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* Styling pentru navbar */
 .navbar {
@@ -141,7 +145,7 @@ footer {
     text-align: center;
     z-index: 1000;
     /* am adaugat pt a o pune jos */
-    margin-top: 60dvh;
+   /* margin-top: 60dvh;*/
 }
 .f-text{
     color: white;
@@ -215,3 +219,24 @@ footer {
 .content2{
     margin: 12vh;
 }
+
+#back-to-top {
+    display: none; /* Ascuns inițial */
+    position: fixed;
+    bottom: 10dvh;
+    right: 20px;
+    z-index: 1000;
+    background-color: #333; /* Fundal întunecat */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s;
+  }
+  
+  #back-to-top:hover {
+    background-color: #555; /* Schimbare de culoare la hover */
+  }
