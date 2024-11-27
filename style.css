@@ -39,12 +39,13 @@ html {
     border-radius: 10px; /* Colțuri rotunjite pentru un efect mai modern */
     background-color: #303030;
     transition: .2s ease-in-out 0s;
-    transform: scale(1.25);
+    /*transform: scale(1.25);*/
 }
 
 .navbar ul li a:hover {
     text-decoration: underline;
     transform: scale(1.25);
+    border-color: #1400a8;
 }
 /*.navbar ul li:hover {
     background-color: #4c00ff;
@@ -232,9 +233,9 @@ footer {
     color: white;
     border: none;
     border-radius: 50%;
-    padding: 10px 15px;
+    padding: 15px 25px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 34px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: opacity 0.3s;
   }
