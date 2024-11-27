@@ -299,3 +299,7 @@ button.next:hover {
 .poze-pg{
     background-color: #c2a7ff;
 }
+.poze-ol, .h2-pozee{
+    margin-bottom: 0!important;
+    margin-left: 2dvh;
+}
